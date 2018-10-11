@@ -694,6 +694,13 @@
   <script>
     $(document).ready(function() {
       $().ready(function() {
+        
+        var options = {
+  data: ["blue", "green", "pink", "red", "yellow"]
+};
+
+$("#txtSearch").easyAutocomplete(options);
+        
         $sidebar = $('.sidebar');
 
         $sidebar_img_container = $sidebar.find('.sidebar-background');
@@ -858,11 +865,7 @@
       // Javascript method's body can be found in assets/js/demos.js
       md.initDashboardPageCharts();
 
-var options = {
-  data: ["blue", "green", "pink", "red", "yellow"]
-};
 
-$("#txtSearch").easyAutocomplete(options);
       
 
     });
